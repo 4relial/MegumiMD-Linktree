@@ -2,65 +2,69 @@ import Image from 'next/image'
 import Link from 'next/link'
 // import styles from './page.module.css'
 import styles from './anu.css'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 
   return (
-    <div>
-      <meta httpEquiv="Content-Type" content="text/html; charset=windows-1252" />
-      <title>Megumi-MD WhatsApp</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="assets/style.css" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
-      {/* Alpha.ly Version 0.1 | Development Version */}
-      <div className="container">
-        <div className="col-xs-12">
-          <div className="text-center" style={{ paddingTop: '30px', paddingBottom: '30px' }}>
-            <img className="backdrop linktree" />
-            <h2 style={{ color: '#ffffff', paddingTop: '20px' }}>DAFTAR BOT WHATSAPP</h2>
+    <>
+      <div>
+        <meta httpEquiv="Content-Type" content="text/html; charset=windows-1252" />
+        <title>Megumi-MD WhatsApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
+        {/* Alpha.ly Version 0.1 | Development Version */}
+        <div className="container">
+          <div className="col-xs-12">
+            <div className="text-center" style={{ paddingTop: '30px', paddingBottom: '30px' }}>
+              <img className="backdrop linktree" />
+              <h2 style={{ color: '#ffffff', paddingTop: '20px' }}>DAFTAR BOT WHATSAPP</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <div className="col-xs-12">
-          <div className="text-center">
-            <div style={{ paddingBottom: '30px' }}>
-              <Link href='https://wa.me/6281952324777'>
-                <button type="button" className="btn btn-outline-light shake" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato</button>
-              </Link>
-            </div>
-            <div style={{ paddingBottom: '30px' }}>
-              <Link href='https://wa.me/6281952324777'>
-                <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
-              </Link>
-            </div>
-            <div style={{ paddingBottom: '30px' }}>
-            <Link href='https://wa.me/6281952324777'>
-              <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Appocalypse</button>
-            </Link>
-            </div>
-            {/* <div style={{paddingBottom: '30px'}}>
+        <div className="container">
+          <div className="col-xs-12">
+            <div className="text-center">
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://wa.me/6281952324777'>
+                  <button type="button" className="btn btn-outline-light shake" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato</button>
+                </Link>
+              </div>
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://wa.me/6281952324777'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
+                </Link>
+              </div>
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://wa.me/6281952324777'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Appocalypse</button>
+                </Link>
+              </div>
+              {/* <div style={{paddingBottom: '30px'}}>
                 <button onclick="location.href='https://wa.me/6281952324777'" type="button" className="btn btn-outline-light" style={{width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600}}>Chisato Nishikigi</button>
               </div> */}
-            <div style={{ paddingBottom: '30px' }}>
-            <Link href='https://chat.whatsapp.com/BfaPLeo5GZoJoFSTGeIZzd'>
-              <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
-            </Link>
-            </div>
-            <div style={{ paddingBottom: '30px' }}>
-            <Link href='https://chat.whatsapp.com/F95twVzNdQRH4XFiW41hRU'>
-              <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
-            </Link>
-            </div>
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://chat.whatsapp.com/BfaPLeo5GZoJoFSTGeIZzd'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
+                </Link>
+              </div>
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://chat.whatsapp.com/F95twVzNdQRH4XFiW41hRU'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
+                </Link>
+              </div>
 
+            </div>
           </div>
         </div>
+        <div className="text-center">
+          <a href="https://github.com/4relial" style={{ color: '#34312f' }} target="_blank">powered by 4Relial</a>
+        </div>
+        {/* This pre-lander was created by Brandon Nilsson */}
+        {/* You're welcome to edit, reproduce and change this template as long as original contributation stays present on the website at all times.  */}
       </div>
-      <div className="text-center">
-        <a href="https://github.com/4relial" style={{ color: '#34312f' }} target="_blank">powered by 4Relial</a>
-      </div>
-      {/* This pre-lander was created by Brandon Nilsson */}
-      {/* You're welcome to edit, reproduce and change this template as long as original contributation stays present on the website at all times.  */}
-    </div>
+      <Analytics />
+    </>
   )
 }
