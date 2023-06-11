@@ -27,7 +27,7 @@ export default function Home() {
           <div className="col-xs-12">
             <div className="text-center">
               <div style={{ paddingBottom: '30px' }}>
-                <Link href='https://wa.me/6281952324777'>
+                <Link href='https://wa.me/6283143726134'>
                   <button type="button" className="btn btn-outline-light shake" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato</button>
                 </Link>
               </div>
@@ -37,7 +37,7 @@ export default function Home() {
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
-                <Link href='https://wa.me/6281952324777'>
+                <Link href='https://wa.me/6288271062064'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Appocalypse</button>
                 </Link>
               </div>
