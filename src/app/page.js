@@ -10,9 +10,10 @@ export default function Home() {
     <>
       <div>
         <meta httpEquiv="Content-Type" content="text/html; charset=windows-1252" />
-        <title>Megumi-MD WhatsApp</title>
+        <title>Megumi BOT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/style.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
         {/* Alpha.ly Version 0.1 | Development Version */}
         <div className="container">
@@ -33,7 +34,7 @@ export default function Home() {
               </div>
               <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://wa.me/6283143726134'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>[2] Megumi Kato</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
@@ -41,11 +42,11 @@ export default function Home() {
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
                 </Link>
               </div>
-              <div style={{ paddingBottom: '30px' }}>
+              {/* <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://wa.me/6288271062064'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Appocalypse</button>
                 </Link>
-              </div>
+              </div> */}
               {/* <div style={{paddingBottom: '30px'}}>
                 <button onclick="location.href='https://wa.me/6281952324777'" type="button" className="btn btn-outline-light" style={{width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600}}>Chisato Nishikigi</button>
               </div> */}
