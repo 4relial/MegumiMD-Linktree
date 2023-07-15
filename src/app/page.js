@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center">
-          <a href="https://github.com/4relial" style={{ color: '#34312f' }} target="_blank">powered by 4Relial</a>
+          <a href="https://github.com/4relial" style={{ color: '#34312f' }} target="_blank">Created by 4Relial</a>
         </div>
         {/* This pre-lander was created by Brandon Nilsson */}
         {/* You're welcome to edit, reproduce and change this template as long as original contributation stays present on the website at all times.  */}
