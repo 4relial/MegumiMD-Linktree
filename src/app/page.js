@@ -37,7 +37,7 @@ export default function Home() {
               </div>
               <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://wa.me/6283143726134'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Apocalypse</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
@@ -45,11 +45,11 @@ export default function Home() {
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
                 </Link>
               </div>
-              {/* <div style={{ paddingBottom: '30px' }}>
+              <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://wa.me/6288271062064'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Appocalypse</button>
                 </Link>
-              </div> */}
+              </div>
               {/* <div style={{paddingBottom: '30px'}}>
                 <button onclick="location.href='https://wa.me/6281952324777'" type="button" className="btn btn-outline-light" style={{width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600}}>Chisato Nishikigi</button>
               </div> */}
