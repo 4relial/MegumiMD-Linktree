@@ -21,48 +21,48 @@ export default function Home() {
         {/* Alpha.ly Version 0.1 | Development Version */}
         <div className="container">
           <div className="col-xs-12">
-            <div className="text-center" style={{ paddingTop: '30px', paddingBottom: '30px' }}>
-              <img className="backdrop linktree" />
-              <h2 style={{ color: '#ffffff', paddingTop: '20px' }}>DAFTAR BOT WHATSAPP</h2>
+            <div className="text-center" style={{ paddingTop: '30px', paddingBottom: '20px' }}>
+            <img className="backdrop linktree" />
+              <h2 style={{ color: '#ffffff', paddingTop: '20px' }}><b>WHATSAPP BOT</b></h2>
             </div>
           </div>
         </div>
         <div className="container">
           <div className="col-xs-12">
             <div className="text-center">
-              <div style={{ paddingBottom: '30px' }}>
+              <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6283157447725'>
-                  <button type="button" className="btn btn-outline-light shake" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato</button>
+                  <button type="button" className="btn btn-outline-light shake" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato</button>
                 </Link>
               </div>
-              <div style={{ paddingBottom: '30px' }}>
+              <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6288271062064'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Apocalypse</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Apocalypse</button>
                 </Link>
               </div>
-              <div style={{ paddingBottom: '30px' }}>
+              <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6281952324777'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
                 </Link>
               </div>
-              <div style={{ paddingBottom: '30px' }}>
+              <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6283143726134'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
                 </Link>
               </div>
-              {/* <div style={{ paddingBottom: '30px' }}>
+              {/* <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6283143726134'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Chisato Nishikigi</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Chisato Nishikigi</button>
                 </Link>
               </div> */}
-              <div style={{ paddingBottom: '30px' }}>
+              <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://chat.whatsapp.com/BfaPLeo5GZoJoFSTGeIZzd'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://chat.whatsapp.com/F95twVzNdQRH4XFiW41hRU'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
                 </Link>
               </div>
 
