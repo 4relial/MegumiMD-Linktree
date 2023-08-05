@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="MEGUMI-MD" />
         <meta property="og:description" content="Daftar Nomor BOT WhatsApp" />
-        <meta property="og:image" content="https://4relial.github.io/Other/yuuka.png" />
+        <meta property="og:image" content="/yuuka.png" />
         <link rel="stylesheet" href="assets/style.css" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
