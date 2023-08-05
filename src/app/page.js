@@ -50,11 +50,11 @@ export default function Home() {
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
                 </Link>
               </div>
-              <div style={{ paddingBottom: '30px' }}>
+              {/* <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://wa.me/6283143726134'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Chisato Nishikigi</button>
                 </Link>
-              </div>
+              </div> */}
               <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://chat.whatsapp.com/BfaPLeo5GZoJoFSTGeIZzd'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
