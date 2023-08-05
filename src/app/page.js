@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="MEGUMI-MD" />
         <meta property="og:description" content="Daftar Nomor BOT WhatsApp" />
-        <meta property="og:image" content="https://katou.my.id/thumb.png" />
+        <meta property="og:image" content="https://4relial.github.io/Other/yuuka.png" />
         <link rel="stylesheet" href="assets/style.css" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
@@ -36,8 +36,8 @@ export default function Home() {
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
-                <Link href='https://wa.me/6283143726134'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
+                <Link href='https://wa.me/6288271062064'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Apocalypse</button>
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
@@ -46,13 +46,15 @@ export default function Home() {
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
-                <Link href='https://wa.me/6288271062064'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Appocalypse</button>
+                <Link href='https://wa.me/6283143726134'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Megumi Kato 2</button>
                 </Link>
               </div>
-              {/* <div style={{paddingBottom: '30px'}}>
-                <button onclick="location.href='https://wa.me/6281952324777'" type="button" className="btn btn-outline-light" style={{width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600}}>Chisato Nishikigi</button>
-              </div> */}
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://wa.me/6283143726134'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Chisato Nishikigi</button>
+                </Link>
+              </div>
               <div style={{ paddingBottom: '30px' }}>
                 <Link href='https://chat.whatsapp.com/BfaPLeo5GZoJoFSTGeIZzd'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '80%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
