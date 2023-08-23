@@ -32,7 +32,7 @@ export default function Home() {
             <div className="text-center">
               <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6283157447725'>
-                  <button type="button" className="btn btn-outline-light shake" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato</button>
+                  <button type="button" className="btn btn-outline-light shake" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato (full)</button>
                 </Link>
               </div>
               <div style={{ paddingBottom: '20px' }}>
