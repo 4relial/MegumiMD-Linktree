@@ -65,6 +65,11 @@ export default function Home() {
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
                 </Link>
               </div>
+              <div style={{ paddingBottom: '30px' }}>
+                <Link href='https://chat.whatsapp.com/IV3Asygn96aIWxmzVqRm8n'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Theresa</button>
+                </Link>
+              </div>
 
             </div>
           </div>
