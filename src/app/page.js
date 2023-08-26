@@ -42,7 +42,7 @@ export default function Home() {
               </div>
               <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6281952324777'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Hitori Gotou</button>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Tendou Alice</button>
                 </Link>
               </div>
               <div style={{ paddingBottom: '20px' }}>
