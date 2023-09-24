@@ -30,11 +30,7 @@ export default function Home() {
         <div className="container">
           <div className="col-xs-12">
             <div className="text-center">
-              <div style={{ paddingBottom: '20px' }}>
-                <Link href='https://api.whatsapp.com/send?phone=6283157447725&text=!menu'>
-                  <button type="button" className="btn btn-outline-light shake" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato (full)</button>
-                </Link>
-              </div>
+              
               <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://api.whatsapp.com/send?phone=6288271062064&text=!menu'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Apocalypse</button>
@@ -48,6 +44,11 @@ export default function Home() {
               <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://api.whatsapp.com/send?phone=6283143726134&text=!menu'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Kafka</button>
+                </Link>
+              </div>
+              <div style={{ paddingBottom: '20px' }}>
+                <Link href='https://api.whatsapp.com/send?phone=6283157447725&text=!menu'>
+                  <button type="button" className="btn btn-outline-light shake" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato (full)</button>
                 </Link>
               </div>
               {/* <div style={{ paddingBottom: '20px' }}>
