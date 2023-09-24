@@ -62,7 +62,7 @@ export default function Home() {
                 </Link>
               </div>
               <div style={{ paddingBottom: '30px' }}>
-                <Link href='https://chat.whatsapp.com/FA6IiC89ianEwdTW3DzHmj'>
+                <Link href='https://chat.whatsapp.com/IQ5kFuIkM30E8rNDpYSTSc'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
                 </Link>
               </div>
