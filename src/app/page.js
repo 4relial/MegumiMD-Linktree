@@ -22,7 +22,7 @@ export default function Home() {
         <div className="container">
           <div className="col-xs-12">
             <div className="text-center" style={{ paddingTop: '30px', paddingBottom: '20px' }}>
-            <img className="backdrop linktree" />
+              <img className="backdrop linktree" />
               <h2 style={{ color: '#ffffff', paddingTop: '20px' }}><b>WHATSAPP BOT</b></h2>
             </div>
           </div>
@@ -30,7 +30,11 @@ export default function Home() {
         <div className="container">
           <div className="col-xs-12">
             <div className="text-center">
-              
+              <div style={{ paddingBottom: '20px' }}>
+                <Link href='https://api.whatsapp.com/send?phone=6283143726134&text=!menu'>
+                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Kafka</button>
+                </Link>
+              </div>
               <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://api.whatsapp.com/send?phone=6288271062064&text=!menu'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Theresa Apocalypse</button>
@@ -41,28 +45,23 @@ export default function Home() {
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Tendou Alice</button>
                 </Link>
               </div>
-              <div style={{ paddingBottom: '20px' }}>
-                <Link href='https://api.whatsapp.com/send?phone=6283143726134&text=!menu'>
-                  <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Kafka</button>
-                </Link>
-              </div>
-              <div style={{ paddingBottom: '20px' }}>
+              {/* <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://api.whatsapp.com/send?phone=6283157447725&text=!menu'>
                   <button type="button" className="btn btn-outline-light shake" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 800 }}>Megumi Kato (full)</button>
                 </Link>
-              </div>
+              </div> */}
               {/* <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://wa.me/6283143726134'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Chisato Nishikigi</button>
                 </Link>
               </div> */}
-              <div style={{ paddingBottom: '20px' }}>
+              {/* <div style={{ paddingBottom: '20px' }}>
                 <Link href='https://chat.whatsapp.com/BfaPLeo5GZoJoFSTGeIZzd'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Pengumuman</button>
                 </Link>
-              </div>
+              </div> */}
               <div style={{ paddingBottom: '30px' }}>
-                <Link href='https://chat.whatsapp.com/IQ5kFuIkM30E8rNDpYSTSc'>
+                <Link href='https://chat.whatsapp.com/KFhS3yqkZ8J1s3dCkPksDc'>
                   <button type="button" className="btn btn-outline-light" style={{ width: '70%', paddingTop: '10px', paddingBottom: '10px', fontWeight: 600 }}>Grup Megumi Kato</button>
                 </Link>
               </div>
