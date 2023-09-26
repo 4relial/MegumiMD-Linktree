@@ -9,8 +9,8 @@ body {
     background: linear-gradient(30deg, hsl(226, 91%, 33%),#851294, hsl(198, 88%, 27%), hsl(168, 91%, 28%));
 	background-size: 450% 450%;
 	animation: gradient 10s ease infinite;
-    overflow: hidden;
-    padding-top: 10px;
+    /* overflow: hidden; */
+    padding-top: 15px;
 }
 
 @keyframes gradient {
