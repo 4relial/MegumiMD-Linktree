@@ -53,15 +53,47 @@
     </spam>
 
     <div id="linksbutton">
-        <a class="links" href="https://api.whatsapp.com/send?phone=6281952324777&text=!menu" target="_blank"
-            style="border-radius: 15px;">🤖&nbsp; Tendou Arisu</a>
-        <a class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!menu" target="_blank"
-            style="border-radius: 15px;">🐱 &nbsp; Theresa Apocalypse</a>
-        <a class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!menu" target="_blank"
-            style="border-radius: 15px;">🌹 &nbsp; Kafka</a>
-        <a class="links" href="#" style="border-radius: 15px;">📚&nbsp; Megumi (FULL)</a>
+        <a id="link1" class="links" href="https://api.whatsapp.com/send?phone=6281952324777&text=!menu" target="_blank" style="border-radius: 15px;">🤖&nbsp; Tendou Arisu</a>
+        <a id="link2" class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!menu" target="_blank" style="border-radius: 15px;">🐱 &nbsp; Theresa Apocalypse</a>
+        <a id="link3" class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!menu" target="_blank" style="border-radius: 15px;">🌹 &nbsp; Kafka</a>
+        <a id="link4" class="links" href="#" style="border-radius: 15px;">📚&nbsp; Megumi (FULL)</a>
     </div>
-
+    
+    <script>
+        // Fungsi untuk mengacak urutan tautan kecuali link4
+        function shuffleLinks() {
+            const linksContainer = document.getElementById('linksbutton');
+            const links = Array.from(linksContainer.getElementsByClassName('links'));
+    
+            // Pisahkan link4 dari daftar tautan yang akan diacak
+            const link4 = document.getElementById('link4');
+            const index = links.indexOf(link4);
+            if (index > -1) {
+                links.splice(index, 1);
+            }
+    
+            // Acak urutan tautan
+            for (let i = links.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [links[i], links[j]] = [links[j], links[i]];
+            }
+    
+            // Hapus semua tautan dari kontainer
+            linksContainer.innerHTML = '';
+    
+            // Tambahkan tautan yang sudah diacak kembali ke kontainer
+            links.forEach(link => {
+                linksContainer.appendChild(link);
+            });
+    
+            // Tambahkan link4 di bawah tautan-tautan yang sudah diacak
+            linksContainer.appendChild(link4);
+        }
+    
+        // Panggil fungsi untuk mengacak urutan tautan saat halaman dimuat
+        window.addEventListener('load', shuffleLinks);
+    </script>
+    
 
     <spam id="title">Grup Whatsapp:</spam>
     <div class="Gears">
