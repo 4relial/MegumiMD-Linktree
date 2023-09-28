@@ -25,6 +25,13 @@
 </head>
 
 <body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>BOT PENUH!</h2>
+            <p>Silakan gunakan Aris/Theresa/Kafka!</p>
+        </div>
+    </div>
     <style>
         .blue-color {
             color: blue;
@@ -64,6 +71,15 @@
 
     <script>
         // Fungsi untuk mengacak urutan tautan kecuali link4
+        // Fungsi untuk menampilkan popup
+        document.getElementById("link4").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("popup").style.display = "block";
+        });
+
+        document.getElementById("close-popup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+        });
         function shuffleLinks() {
             const linksContainer = document.getElementById('linksbutton');
             const links = Array.from(linksContainer.getElementsByClassName('links'));
@@ -131,7 +147,6 @@
         // Menjadwalkan pemanggilan fetchData setiap beberapa detik (misalnya setiap 5 detik)
         setInterval(fetchData, 5000); // Ubah angka ini sesuai dengan kebutuhan Anda
     </script>
-    
 </body>
 <!-- Tambahkan library particles.js di sini -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
