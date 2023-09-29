@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Ambil elemen popup
+    var popup = document.getElementById("custom-popup");
+
+    // Ambil elemen tombol close
+    var closeBtn = document.getElementById("custom-close-popup");
+
+    // Tampilkan popup saat halaman dibuka
+    popup.style.display = "block";
+
+    // Sembunyikan popup saat tombol close diklik
+    closeBtn.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+});
+
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
