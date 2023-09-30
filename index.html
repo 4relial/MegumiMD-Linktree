@@ -172,7 +172,7 @@
             const referer = document.referrer;
             console.log("Referer: " + referer);
 
-            fetch(`https://counter.4relial.repl.co/?referer=${referer}`)
+            fetch(`https://api.4relial.id/katoucount/?referer=${referer}`)
                 .then(response => response.json())
                 .then(data => {
                     // Mengambil nilai 'count' dari data JSON
