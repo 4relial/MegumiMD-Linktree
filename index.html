@@ -62,17 +62,55 @@
     </spam>
 
     <div id="linksbutton" class="pl-4 pr-4">
-        <a id="link1" class="links" href="https://api.whatsapp.com/send?phone=6281952324777&text=!menu" target="_blank"
-            style="border-radius: 15px;">🤖&nbsp; Tendou Arisu</a>
-        <a id="link2" class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!menu" target="_blank"
-            style="border-radius: 15px;">🐱 &nbsp; Theresa Apocalypse</a>
-        <a id="link3" class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!menu" target="_blank"
-            style="border-radius: 15px;">🌹 &nbsp; Kafka</a>
-        <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6281536371408&text=!menu" target="_blank"
-            style="border-radius: 15px;">🍃 &nbsp; Nahida</a>
-        <a id="link5" class="links" href="https://api.whatsapp.com/send?phone=6283157447725&text=!menu" target="_blank"
-            style="border-radius: 15px;">📚&nbsp; Katou Megumi</a>
+        <a id="link1" class="links" href="https://api.whatsapp.com/send?phone=6281952324777&text=!menu" target="_blank" style="border-radius: 15px;">🤖&nbsp; Arisu (PREMIUM)</a>
+        <a id="link2" class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!menu" target="_blank" style="border-radius: 15px;">🐱 &nbsp; Theresa (PREMIUM)</a>
+        <a id="link3" class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!menu" target="_blank" style="border-radius: 15px;">🌹 &nbsp; Kafka (PREMIUM)</a>
+        <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6281536371408&text=!menu" target="_blank" style="border-radius: 15px;">🍃 &nbsp; Nahida (PREMIUM)</a>
+        <a id="link5" class="links" href="https://api.whatsapp.com/send?phone=6283157447725&text=!menu" target="_blank" style="border-radius: 15px;">📚&nbsp; Megumi (FREE)</a>
     </div>
+    
+    <script>
+        document.getElementById("close-popup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+        });
+    
+        function shuffleLinks() {
+            const linksContainer = document.getElementById('linksbutton');
+            const links = Array.from(linksContainer.getElementsByClassName('links'));
+    
+            // Temukan link dengan teks "Katou Megumi"
+            const katouMegumiLink = links.find(link => link.textContent.includes('Katou Megumi'));
+    
+            // Hapus link "Katou Megumi" dari array
+            if (katouMegumiLink) {
+                const index = links.indexOf(katouMegumiLink);
+                links.splice(index, 1);
+            }
+    
+            // Acak urutan tautan
+            for (let i = links.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [links[i], links[j]] = [links[j], links[i]];
+            }
+    
+            // Tambahkan link "Katou Megumi" kembali ke array di paling atas
+            if (katouMegumiLink) {
+                links.unshift(katouMegumiLink);
+            }
+    
+            // Hapus semua tautan dari kontainer
+            linksContainer.innerHTML = '';
+    
+            // Tambahkan tautan yang sudah diacak kembali ke kontainer
+            links.forEach(link => {
+                linksContainer.appendChild(link);
+            });
+        }
+    
+        // Panggil fungsi untuk mengacak urutan tautan saat halaman dimuat
+        window.addEventListener('load', shuffleLinks);
+    </script>
+    
 
     <!-- Popup iklan -->
     <!-- <div id="custom-popup" class="custom-popup">
@@ -147,50 +185,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Fungsi untuk mengacak urutan tautan kecuali link4
-        // Fungsi untuk menampilkan popup
-        // document.getElementById("link4").addEventListener("click", function (event) {
-        //     event.preventDefault();
-        //     document.getElementById("popup").style.display = "block";
-        // });
-
-        document.getElementById("close-popup").addEventListener("click", function () {
-            document.getElementById("popup").style.display = "none";
-        });
-        function shuffleLinks() {
-            const linksContainer = document.getElementById('linksbutton');
-            const links = Array.from(linksContainer.getElementsByClassName('links'));
-
-            // Pisahkan link4 dari daftar tautan yang akan diacak
-            // const link4 = document.getElementById('link4');
-            // const index = links.indexOf(link4);
-            // if (index > -1) {
-            //     links.splice(index, 1);
-            // }
-
-            // Acak urutan tautan
-            for (let i = links.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [links[i], links[j]] = [links[j], links[i]];
-            }
-
-            // Hapus semua tautan dari kontainer
-            linksContainer.innerHTML = '';
-
-            // Tambahkan tautan yang sudah diacak kembali ke kontainer
-            links.forEach(link => {
-                linksContainer.appendChild(link);
-            });
-
-            // Tambahkan link4 di bawah tautan-tautan yang sudah diacak
-            linksContainer.appendChild(link4);
-        }
-
-        // Panggil fungsi untuk mengacak urutan tautan saat halaman dimuat
-        window.addEventListener('load', shuffleLinks);
-    </script>
 
 
     <spam id="title">Link Lainnya:</spam>
