@@ -66,51 +66,51 @@
         <a id="link2" class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!menu" target="_blank" style="border-radius: 15px;">🐱 &nbsp; Theresa (PREMIUM)</a>
         <a id="link3" class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!menu" target="_blank" style="border-radius: 15px;">🌹 &nbsp; Kafka (PREMIUM)</a>
         <!-- <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6281536371408&text=!menu" target="_blank" style="border-radius: 15px;">🍃 &nbsp; Nahida (PREMIUM)</a> -->
-        <!-- <a id="link5" class="links" href="https://api.whatsapp.com/send?phone=6283157447725&text=!menu" target="_blank" style="border-radius: 15px;">📚&nbsp; Megumi (FREE)</a> -->
+    <!-- <a id="link5" class="links" href="https://api.whatsapp.com/send?phone=6283157447725&text=!menu" target="_blank" style="border-radius: 15px;">📚&nbsp; Megumi (FREE)</a> -->
     </div> -->
-    
+
     <script>
         document.getElementById("close-popup").addEventListener("click", function () {
             document.getElementById("popup").style.display = "none";
         });
-    
+
         function shuffleLinks() {
             const linksContainer = document.getElementById('linksbutton');
             const links = Array.from(linksContainer.getElementsByClassName('links'));
-    
+
             // Temukan link dengan teks "Katou Megumi"
             const katouMegumiLink = links.find(link => link.textContent.includes('Katou Megumi'));
-    
+
             // Hapus link "Katou Megumi" dari array
             if (katouMegumiLink) {
                 const index = links.indexOf(katouMegumiLink);
                 links.splice(index, 1);
             }
-    
+
             // Acak urutan tautan
             for (let i = links.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [links[i], links[j]] = [links[j], links[i]];
             }
-    
+
             // Tambahkan link "Katou Megumi" kembali ke array di paling atas
             if (katouMegumiLink) {
                 links.unshift(katouMegumiLink);
             }
-    
+
             // Hapus semua tautan dari kontainer
             linksContainer.innerHTML = '';
-    
+
             // Tambahkan tautan yang sudah diacak kembali ke kontainer
             links.forEach(link => {
                 linksContainer.appendChild(link);
             });
         }
-    
+
         // Panggil fungsi untuk mengacak urutan tautan saat halaman dimuat
         window.addEventListener('load', shuffleLinks);
     </script>
-    
+
 
     <!-- Popup iklan -->
     <!-- <div id="custom-popup" class="custom-popup">
@@ -163,23 +163,25 @@
                             style="background-color: #b2fcff; max-height: 200px;">
                         <div class="content-text p-2">
 
-                            <h4 class="mb-2 text-center">UNDER MAINTENANCE</h4>
-                            <!-- <h4 class="mb-2 text-center">PERHATIAN!</h4> -->
-                            <!-- <p class="mb-4">
+                            <!-- <h4 class="mb-2 text-center">UNDER MAINTENANCE</h4> -->
+                            <h4 class="mb-2 text-center">PERHATIAN!</h4>
+                            <p class="mb-4">
                             <p><strong>Saat ini bot sedang mengalami lonjakan user yang terlalu tinggi, sementara semua
-                                    fitur dikunci dan hanya dapat digunakan oleh member Premium dan VIP</strong></p>
+                                    fitur dikunci dan hanya dapat digunakan oleh member Premium</strong></p>
                             <ul>
                                 <li>Premium: 10K/Bulan</li>
-                                <li>Grup VIP: 20K/Bulan/Grup</li>
                                 <li>Ketik !premium di nomor bot untuk memesan</li>
                             </ul>
                             </p>
-                            <p><strong>Atau silakan masuk ke grup ini untuk menggunakan bot secara gratis: <a href="https://chat.whatsapp.com/Cq83zu2QbGdIaJRtncvazg">https://chat.whatsapp.com/Cq83zu2QbGdIaJRtncvazg</a></strong></p> -->
+                            <p><strong>Atau silakan masuk ke grup ini untuk menggunakan bot secara gratis: <a
+                                        href="https://chat.whatsapp.com/Cq83zu2QbGdIaJRtncvazg">https://chat.whatsapp.com/Cq83zu2QbGdIaJRtncvazg</a></strong>
+                            </p> 
                             <!-- <div class="d-flex align-items-center justify-content-center">
-                          <div class="d-flex align-items-center justify-content-center">
-                            <a href="https://blessify.id" target="_blank" class="btn btn-primary px-4">Blessify.id</a>
-                          </div>
-                        </div> -->
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="https://blessify.id" target="_blank"
+                                        class="btn btn-primary px-4">Blessify.id</a>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
 
