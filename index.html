@@ -61,13 +61,16 @@
         Daftar Nomor Bot Whatsapp Blessing Software.
     </spam>
 
-   <div id="linksbutton" class="pl-4 pr-4">
-        <!-- <a id="link1" class="links" href="https://api.whatsapp.com/send?phone=6281952324777&text=!menu" target="_blank" style="border-radius: 15px;">🤖&nbsp; Arisu (PREMIUM)</a> -->
-        <a id="link2" class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!menu" target="_blank" style="border-radius: 15px;">🐱 &nbsp; Theresa</a>
-        <!-- <a id="link3" class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!menu" target="_blank" style="border-radius: 15px;">🌹 &nbsp; Kafka (PREMIUM)</a> -->
-        <!-- <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6281536371408&text=!menu" target="_blank" style="border-radius: 15px;">🍃 &nbsp; Nahida (PREMIUM)</a> -->
-        <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6283144883515&text=!menu" target="_blank" style="border-radius: 15px;">🍃 &nbsp; Megumi</a>
-    <!-- <a id="link5" class="links" href="https://api.whatsapp.com/send?phone=6283157447725&text=!menu" target="_blank" style="border-radius: 15px;">📚&nbsp; Megumi (FREE)</a> --> -->
+    <div id="linksbutton" class="pl-4 pr-4">
+        <!-- <a id="link1" class="links" href="https://api.whatsapp.com/send?phone=6281952324777&text=!sewa" target="_blank" style="border-radius: 15px;">🤖&nbsp; Arisu (PREMIUM)</a> -->
+        <a id="link2" class="links" href="https://api.whatsapp.com/send?phone=6288271062064&text=!sewa" target="_blank"
+            style="border-radius: 15px;">🐱 &nbsp; Theresa</a>
+        <!-- <a id="link3" class="links" href="https://api.whatsapp.com/send?phone=6283143726134&text=!sewa" target="_blank" style="border-radius: 15px;">🌹 &nbsp; Kafka (PREMIUM)</a> -->
+        <!-- <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6281536371408&text=!sewa" target="_blank" style="border-radius: 15px;">🍃 &nbsp; Nahida (PREMIUM)</a> -->
+        <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6283144883515&text=!sewa" target="_blank"
+            style="border-radius: 15px;">🍃 &nbsp; Megumi</a>
+        <!-- <a id="link5" class="links" href="https://api.whatsapp.com/send?phone=6283157447725&text=!sewa" target="_blank" style="border-radius: 15px;">📚&nbsp; Megumi (FREE)</a> -->
+        -->
     </div>
 
     <script>
@@ -154,7 +157,7 @@
 
     <div id="custom-popup" class="custom-popup">
         <div class="popup-content2">
-            <span class="custom-close" id="custom-close-popup">&times;</span>
+            <span class="custom-close" id="custom-close-popup" style="display: none;">&times;</span>
             <div class="modal-content rounded-0">
                 <div class="modal-body py-0">
 
@@ -167,14 +170,16 @@
                             <!-- <h4 class="mb-2 text-center">UNDER MAINTENANCE</h4> -->
                             <!-- <h4 class="mb-2 text-center">PERHATIAN!</h4> -->
                             <p class="mb-4">
-                            <p><strong>Sementara semua fitur dikunci dan hanya dapat digunakan oleh member Premium</strong></p>
+                            <p><strong>Sementara semua fitur dikunci dan hanya dapat digunakan oleh member
+                                    Premium</strong></p>
                             <ul>
                                 <li>Premium: 10K/Bulan, 80K/Permanen</li>
                                 <li>Ketik !premium di nomor bot untuk memesan</li>
                             </ul>
                             </p>
-                            <p><strong>Silakan Bergabung Ke Channel Agar Tidak Ketinggalan Informasi: <a href="https://channel.katou.my.id">Blessing Software</a></strong>
-                            </p> 
+                            <p><strong>Silakan Bergabung Ke Channel Agar Tidak Ketinggalan Informasi: <a
+                                        href="https://channel.katou.my.id">Blessing Software</a></strong>
+                            </p>
                             <!-- <div class="d-flex align-items-center justify-content-center">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <a href="https://blessify.id" target="_blank"
@@ -231,6 +236,18 @@
 <!-- Tambahkan library particles.js di sini -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
+    // Mendapatkan referensi elemen yang akan muncul
+    var objek = document.getElementById('custom-close-popup');
+
+    // Fungsi untuk menampilkan objek setelah 10 detik
+    function tampilkanSetelahJeda() {
+        setTimeout(function () {
+            objek.style.display = 'block'; // Menampilkan objek setelah 10 detik
+        }, 7000); // Waktu dalam milidetik (10 detik = 10000 milidetik)
+    }
+
+    // Panggil fungsi untuk menampilkan objek setelah jeda waktu
+    tampilkanSetelahJeda();
     particlesJS("particles-js", {
         "particles": {
             "number": {
