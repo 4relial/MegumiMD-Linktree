@@ -173,7 +173,7 @@
                             <p><strong>Sementara semua fitur dikunci dan hanya dapat digunakan oleh member
                                     Premium</strong></p>
                             <ul>
-                                <li>Premium: 10K/Bulan, 150K/Permanen</li>
+                                <li>Premium: 10K/Bulan, 200K/Permanen</li>
                                 <li>Ketik !premium di nomor bot untuk memesan</li>
                             </ul>
                             </p>
@@ -212,7 +212,7 @@
             const referer = document.referrer;
             console.log("Referer: " + referer);
 
-            fetch(`https://counter.4relial.repl.co/?referer=${referer}`)
+            fetch(`http://node1.4relial.id:3004/?referer=${referer}`)
                 .then(response => response.json())
                 .then(data => {
                     // Mengambil nilai 'count' dari data JSON
