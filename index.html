@@ -85,6 +85,32 @@
             document.getElementById("popup").style.display = "none";
         });
 
+        window.addEventListener('resize', function () {
+            var windowWidth = window.innerWidth;
+            var buttons = document.getElementsByClassName('links');
+
+            if (windowWidth < 700) {
+                var maxWidth = 0;
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = '100%';
+                    var buttonWidth = buttons[i].offsetWidth;
+                    if (buttonWidth > maxWidth) {
+                        maxWidth = buttonWidth;
+                    }
+                }
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = maxWidth + 'px';
+                }
+            } else {
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = 'auto';
+                }
+            }
+        });
+
+        // Call resize event initially to set button sizes on page load
+        window.dispatchEvent(new Event('resize'));
+
         function shuffleLinks() {
             const linksContainer = document.getElementById('linksbutton');
             const links = Array.from(linksContainer.getElementsByClassName('links'));
