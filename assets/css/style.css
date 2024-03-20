@@ -92,16 +92,8 @@
 }
 
 body {
-    background: linear-gradient(30deg, 
-        hsl(226, 91%, 10%), /* Warna gelap 1 */
-        hsl(250, 80%, 15%), /* Warna gelap 2 */
-        hsl(191, 100%, 11%), /* Warna gelap 6 */
-        hsl(197, 95%, 7%), /* Warna gelap 3 */
-        hsl(261, 85%, 24%), /* Warna gelap 4 */
-        hsl(298, 80%, 22%), /* Warna gelap 5 */
-        hsl(36, 90%, 22%) /* Warna gelap 7 */
-    );
-	background-size: 600% 600%; /* Sesuaikan ukuran latar belakang */
+    background: linear-gradient(30deg, hsl(226, 91%, 20%),#4b0462, hsl(198, 88%, 17%), hsl(168, 91%, 18%)); /* Ubah nilai Lightness untuk membuat warna gradient lebih gelap */
+	background-size: 450% 450%;
 	animation: gradient 10s ease infinite;
     padding-top: 15px;
 }
@@ -117,8 +109,6 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
-
 
 
 
@@ -154,6 +144,7 @@ body {
     display: block;
     font-family: var(--font);
     width: 100%;
+    margin-top: 50px;
     text-align: center;
     text-decoration: none;
 }
@@ -183,7 +174,6 @@ body {
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
     border: solid var(--color-main) 2px;
     width: calc(100% - 16px); /* Menentukan lebar tombol, mengurangi margin */
-    min-width: 70%;
     max-width: 260px; /* Mengatur lebar maksimum tombol */
     box-sizing: border-box; /* Menjadikan padding termasuk dalam perhitungan lebar */
 }
