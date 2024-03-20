@@ -45,6 +45,19 @@
         width: 90%;
         left: 50%;
     }
+
+    #linksbutton {
+        flex-direction: column; /* Tombol-tombol ditampilkan secara vertikal */
+        align-items: center; /* Tombol-tombol diatur di tengah secara horizontal */
+        margin: 27px 1px;
+    }
+
+    .links {
+        width: auto; /* Tombol-tombol mengambil lebar yang sesuai dengan konten */
+        margin: 5px 0px;
+        min-width: 60vw;
+        max-width: 90vw;
+    }
 }
 
 
@@ -79,10 +92,17 @@
 }
 
 body {
-    background: linear-gradient(30deg, hsl(226, 91%, 33%),#851294, hsl(198, 88%, 27%), hsl(168, 91%, 28%));
-	background-size: 450% 450%;
+    background: linear-gradient(30deg, 
+        hsl(226, 91%, 10%), /* Warna gelap 1 */
+        hsl(250, 80%, 15%), /* Warna gelap 2 */
+        hsl(191, 100%, 11%), /* Warna gelap 6 */
+        hsl(197, 95%, 7%), /* Warna gelap 3 */
+        hsl(261, 85%, 24%), /* Warna gelap 4 */
+        hsl(298, 80%, 22%), /* Warna gelap 5 */
+        hsl(36, 90%, 22%) /* Warna gelap 7 */
+    );
+	background-size: 600% 600%; /* Sesuaikan ukuran latar belakang */
 	animation: gradient 10s ease infinite;
-    /* overflow: hidden; */
     padding-top: 15px;
 }
 
@@ -97,6 +117,9 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+
+
 
 
 .theme-light {
@@ -131,7 +154,7 @@ body {
     display: block;
     font-family: var(--font);
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -139,25 +162,30 @@ body {
 
 
 #linksbutton {
-    max-width: 580px;
+    max-width: 700px; /* Mengubah max-width menjadi 700px */
     width: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 27px auto;
 }
 
 .links {
-    display: block;
+    display: inline-block;
     background-color: rgba(255, 255, 255, 0.0 );
     color: var(--color-text);
     font-family: var(--font);
     text-align: center;
-    margin-bottom: 8px;
-    padding: 17px;
+    margin: 5px;
+    padding: 15px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
     border: solid var(--color-main) 2px;
+    width: calc(100% - 16px); /* Menentukan lebar tombol, mengurangi margin */
+    max-width: 260px; /* Mengatur lebar maksimum tombol */
+    box-sizing: border-box; /* Menjadikan padding termasuk dalam perhitungan lebar */
 }
 
 .links:hover {
@@ -165,6 +193,7 @@ body {
     color: #000;
     border: solid var(--color-main) 2px;
 }
+
 
 
 .gears {
@@ -215,4 +244,15 @@ body {
     margin-top: 20px;
     text-align: center;
     text-decoration: none;
+}
+
+
+ /* Centering content */
+ .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Menggunakan tinggi viewport untuk mengisi seluruh tinggi layar */
 }
