@@ -154,7 +154,6 @@ body {
     display: block;
     font-family: var(--font);
     width: 100%;
-    margin-top: 10px;
     text-align: center;
     text-decoration: none;
 }
