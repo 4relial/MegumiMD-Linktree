@@ -172,7 +172,7 @@ body {
     font-weight: bold;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
     border: solid var(--color-main) 2px;
-    width: calc(100% - 16px);
+    width: auto;
     min-width: 80%; /* Menentukan lebar tombol, mengurangi margin */
     max-width: 260px; /* Mengatur lebar maksimum tombol */
     box-sizing: border-box; /* Menjadikan padding termasuk dalam perhitungan lebar */
