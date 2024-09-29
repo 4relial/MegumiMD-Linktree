@@ -3781,9 +3781,23 @@ body {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     --font-color: rgb(10, 10, 10);
-    background: url("https://arisu.my.id/assets/bg.jpg") no-repeat center;
     --card-hover-bg: linear-gradient(45deg, rgba(202, 157, 157, 0.12), rgba(255, 255, 255, 0.5));
-    background-size: cover;
+}
+
+/* Gaya untuk layar portrait */
+@media only screen and (orientation: portrait) {
+    body {
+        background: url("https://arisu.my.id/assets/portrait.jpg") no-repeat center;
+        background-size: cover;
+    }
+}
+
+/* Gaya untuk layar landscape */
+@media only screen and (orientation: landscape) {
+    body {
+        background: url("https://arisu.my.id/assets/landscape.jpg") no-repeat center;
+        background-size: cover;
+    }
 }
 
 .Header {
