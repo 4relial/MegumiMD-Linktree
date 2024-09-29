@@ -3782,7 +3782,7 @@ body {
     transition-timing-function: ease-in-out;
     --font-color: rgb(10, 10, 10);
     background: url("https://arisu.my.id/assets/bg.jpg") no-repeat center;
-    --card-hover-bg: rgba(0, 0, 0, 0.12);
+    --card-hover-bg: linear-gradient(45deg, rgba(202, 157, 157, 0.12), rgba(255, 255, 255, 0.5));
     background-size: cover;
 }
 
@@ -3834,7 +3834,7 @@ a:hover {
 
 
 .Card:hover {
-    background: var(--card-hover-bg);
+    background: linear-gradient(45deg, rgba(252, 214, 239, 0.699), rgba(226, 217, 217, 0.829));
     border: 1px solid hsla(0, 0%, 87.8%, 0);
 }
 
