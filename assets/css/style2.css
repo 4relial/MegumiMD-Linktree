@@ -3781,6 +3781,7 @@ body {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     --font-color: rgb(10, 10, 10);
+    background-attachment: fixed;
     --card-hover-bg: linear-gradient(45deg, rgba(202, 157, 157, 0.12), rgba(255, 255, 255, 0.5));
 }
 
@@ -3789,6 +3790,7 @@ body {
     body {
         background: url("https://arisu.my.id/assets/potrait.jpg") no-repeat center;
         background-size: cover;
+        background-attachment: fixed; /* Tambahkan properti ini */
     }
 }
 
@@ -3797,6 +3799,7 @@ body {
     body {
         background: url("https://arisu.my.id/assets/landscape.jpg") no-repeat center;
         background-size: cover;
+        background-attachment: fixed; /* Tambahkan properti ini */
     }
 }
 
