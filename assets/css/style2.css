@@ -3781,8 +3781,9 @@ body {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     --font-color: rgb(10, 10, 10);
-    background: url("/assets/bg.jpg") no-repeat center;
+    background: url("https://arisu.my.id/assets/bg.jpg") no-repeat center;
     --card-hover-bg: rgba(0, 0, 0, 0.12);
+    background-size: cover;
 }
 
 .Header {
