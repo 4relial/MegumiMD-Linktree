@@ -105,9 +105,39 @@
             <div class="Footer container">
                 <p style="color: white;">Made with <span class="heart">❤️</span> by <a href="https://4relial.id" style="color: white;">Arisu Soft Cloud</a>
                 </p>
+                <p style="color: white;"> Visitor: <span id="counter">Loading...</span></p>
             </div>
         </div>
     </div>
+
+    <script>
+        // Fungsi untuk mengambil data dari URL
+
+        function fetchData() {
+            const referer = document.referrer;
+            console.log("Referer: " + referer);
+
+            fetch(`https://api-v2.katou.my.id/katouCount?referer=${referer}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Mengambil nilai 'count' dari data JSON
+                    const count = data.count;
+
+                    // Menampilkan nilai count pada elemen HTML dengan id 'counter'
+                    document.getElementById('counter').textContent = count;
+                })
+                .catch(error => {
+                    console.error('Terjadi kesalahan:', error);
+                });
+        }
+
+        // Memanggil fungsi fetchData untuk pertama kali saat halaman dimuat
+        fetchData();
+
+        // Menjadwalkan pemanggilan fetchData setiap beberapa detik (misalnya setiap 5 detik)
+        setInterval(fetchData, 20000); // Ubah angka ini sesuai dengan kebutuhan Anda
+    </script>
+
 </body>
 
 </html>
