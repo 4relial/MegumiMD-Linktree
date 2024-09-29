@@ -3787,7 +3787,7 @@ body {
 /* Gaya untuk layar portrait */
 @media only screen and (orientation: portrait) {
     body {
-        background: url("https://arisu.my.id/assets/portrait.jpg") no-repeat center;
+        background: url("https://arisu.my.id/assets/potrait.jpg") no-repeat center;
         background-size: cover;
     }
 }
