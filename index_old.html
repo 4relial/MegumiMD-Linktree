@@ -1,0 +1,287 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Arisu Soft</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta property="og:title" content="Arisu Software" />
+    <meta property="og:description" content="Daftar Nomor BOT WhatsApp" />
+    <meta property="og:image" content="https://arisu.my.id/assets/yuukaHD.png" />
+    <meta property="og:image" content="https://arisu.my.id/assets/yuuka.png" />
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 99%;
+            height: 95%;
+            z-index: -1;
+            /* Membawa partikel ke belakang konten */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>BOT PENUH!</h2>
+            <p>Silakan gunakan Aris/Theresa/Kafka!</p>
+        </div>
+    </div>
+    <style>
+        .blue-color {
+            color: blue;
+        }
+
+        .green-color {
+            color: green;
+        }
+
+        .teal-color {
+            color: teal;
+        }
+
+        .yellow-color {
+            color: yellow;
+        }
+
+        .red-color {
+            color: red;
+        }
+    </style>
+    <div id="particles-js"></div>
+    <div class="center-content">
+        <img id="Photo" src="assets/yuuka.png" alt="Yuuka">
+        <spam id="Name">
+            <h2 class="mt-3 animated-intro-text">Arisu Soft</h2>
+            Daftar Nomor Bot Whatsapp Aktif.
+        </spam>
+
+        <div id="linksbutton">
+            <a id="link2" class="links"
+                href="https://api.whatsapp.com/send?phone=6288271062064&text=Hanya%20dapat%20digunakan%20oleh%20member%20premium%21%0A%2ABeli%20premium%20di%3A%2A%20https%3A%2F%2Fwa.me%2Farisu%0A%0AJika%20kamu%20adalah%20user%20premium%2C%20silakan%20ketik%20%21menu"
+                target="_blank" style="border-radius: 15px;"><i class="fa fa-music"></i>&nbsp; Alya Mikhailovna</a>
+            <a id="link4" class="links"
+                href="https://api.whatsapp.com/send?phone=6283144883515&text=Hanya%20dapat%20digunakan%20oleh%20member%20premium%21%0A%2ABeli%20premium%20di%3A%2A%20https%3A%2F%2Fwa.me%2Farisu%0A%0AJika%20kamu%20adalah%20user%20premium%2C%20silakan%20ketik%20%21menu"
+                target="_blank" style="border-radius: 15px;"><i class="fa fa-robot"></i>&nbsp; Hayase Yuuka</a>
+            <!-- <a id="link4" class="links" href="https://api.whatsapp.com/send?phone=6283130550569&text=Hanya%20dapat%20digunakan%20oleh%20member%20premium%21%0A%2ABeli%20premium%20di%3A%2A%20https%3A%2F%2Fwa.me%2Farisu%0A%0AJika%20kamu%20adalah%20user%20premium%2C%20silakan%20ketik%20%21menu"
+                target="_blank" style="border-radius: 15px;"><i class="fa fa-code"></i>&nbsp; Arona</a> -->
+        </div>
+
+        <spam id="title">Link Lainnya:</spam>
+        <div class="Gears">
+            <a class="gear" href="https://soft.arisu.my.id/grup" target="_blank" style="border-radius: 15px;">WhatsApp
+                Group</a>
+            <a class="gear" href="https://whatsapp.com/channel/0029VaF8y0ZDJ6H9O1Gwv93T" target="_blank"
+                style="border-radius: 15px;">WhatsApp Channel</a>
+        </div>
+        <spam id="footertext"> Made with ❤️ By <a href="https://4relial.id" style="color: #fff;">Arisu Software</a>
+            <spam id="footertext"> Visitor: <span id="counter">Loading...</span></spam>
+        </spam>
+    </div>
+
+    <script>
+        document.getElementById("close-popup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+        });
+
+        window.addEventListener('resize', function () {
+            var windowWidth = window.innerWidth;
+            var buttons = document.getElementsByClassName('links');
+
+            if (windowWidth < 700) {
+                var maxWidth = 0;
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = '100%';
+                    var buttonWidth = buttons[i].offsetWidth;
+                    if (buttonWidth > maxWidth) {
+                        maxWidth = buttonWidth;
+                    }
+                }
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = maxWidth + 'px';
+                }
+            } else {
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = 'auto';
+                }
+            }
+        });
+
+        // Call resize event initially to set button sizes on page load
+        window.dispatchEvent(new Event('resize'));
+
+        function shuffleLinks() {
+            const linksContainer = document.getElementById('linksbutton');
+            const links = Array.from(linksContainer.getElementsByClassName('links'));
+
+            // Temukan link dengan teks "Katou Megumi"
+            const katouMegumiLink = links.find(link => link.textContent.includes('Katou Megumi'));
+
+            // Hapus link "Katou Megumi" dari array
+            if (katouMegumiLink) {
+                const index = links.indexOf(katouMegumiLink);
+                links.splice(index, 1);
+            }
+
+            // Acak urutan tautan
+            for (let i = links.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [links[i], links[j]] = [links[j], links[i]];
+            }
+
+            // Tambahkan link "Katou Megumi" kembali ke array di paling atas
+            if (katouMegumiLink) {
+                links.unshift(katouMegumiLink);
+            }
+
+            // Hapus semua tautan dari kontainer
+            linksContainer.innerHTML = '';
+
+            // Tambahkan tautan yang sudah diacak kembali ke kontainer
+            links.forEach(link => {
+                linksContainer.appendChild(link);
+            });
+        }
+
+        // Panggil fungsi untuk mengacak urutan tautan saat halaman dimuat
+        window.addEventListener('load', shuffleLinks);
+    </script>
+
+
+    <div id="custom-popup" class="custom-popup">
+        <div class="popup-content2">
+            <span class="custom-close" id="custom-close-popup" style="display: none;">&times;</span>
+            <div class="modal-content rounded-0">
+                <div class="modal-body py-0">
+                    <div class="d-block main-content text-center">
+                        <img src="https://4relial.github.io/thumbnail/yuuka/1.jpg" alt="Image" class="img-fluid"
+                            style="background-color: #b2fcff; width: 400px; max-width: 70vw; height: auto; display: block; margin: 0 auto;">
+                        <div class="content-text p-2">
+                            <!-- <h4 class="mb-2 text-center">UNDER MAINTENANCE</h4> -->
+                            <h4 class="mb-2 text-center">INFORMASI!</h4>
+                            <p class="mb-4">
+                                Ingin menggunakan bot secara gratis? buat botmu sendiri secara gratis di <a
+                                    href="https://jadibot.arisu.my.id">Jadibot Server</a>.
+                            </p>
+                            <p><strong>Agar tidak ketinggalan Informasi silakan follow saluran resmi <a
+                                        href="https://whatsapp.com/channel/0029VaF8y0ZDJ6H9O1Gwv93T">Arisu Soft</a></strong></p>
+                            <!-- <div class="d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="https://blessify.id" target="_blank"
+                                    class="btn btn-primary px-4">Blessify.id</a>
+                            </div>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Fungsi untuk mengambil data dari URL
+
+        function fetchData() {
+            const referer = document.referrer;
+            console.log("Referer: " + referer);
+
+            fetch(`https://api.4relial.id/katouCount?referer=${referer}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Mengambil nilai 'count' dari data JSON
+                    const count = data.count;
+
+                    // Menampilkan nilai count pada elemen HTML dengan id 'counter'
+                    document.getElementById('counter').textContent = count;
+                })
+                .catch(error => {
+                    console.error('Terjadi kesalahan:', error);
+                });
+        }
+
+        // Memanggil fungsi fetchData untuk pertama kali saat halaman dimuat
+        fetchData();
+
+        // Menjadwalkan pemanggilan fetchData setiap beberapa detik (misalnya setiap 5 detik)
+        setInterval(fetchData, 20000); // Ubah angka ini sesuai dengan kebutuhan Anda
+    </script>
+</body>
+<!-- Tambahkan library particles.js di sini -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    // Mendapatkan referensi elemen yang akan muncul
+    var objek = document.getElementById('custom-close-popup');
+
+    // Fungsi untuk menampilkan objek setelah 10 detik
+    function tampilkanSetelahJeda() {
+        setTimeout(function () {
+            objek.style.display = 'block'; // Menampilkan objek setelah 10 detik
+        }, 3000); // Waktu dalam milidetik (10 detik = 10000 milidetik)
+    }
+
+    // Panggil fungsi untuk menampilkan objek setelah jeda waktu
+    tampilkanSetelahJeda();
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 120, // Mengubah jumlah partikel
+                "density": {
+                    "enable": true,
+                    "value_area": 1000
+                }
+            },
+            "color": {
+                "value": "#007bff" // Mengubah warna partikel menjadi biru (#007bff)
+            },
+            "shape": {
+                "type": "circle", // Mengatur bentuk partikel menjadi bintang
+                "stroke": {
+                    "width": 0,
+                    "color": "#ffffff"
+                },
+            },
+            "opacity": {
+                "value": 0.6, // Mengubah tingkat kejelasan partikel
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 0.5,
+                    "opacity_min": 0.3,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 7, // Mengubah ukuran partikel
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 5,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+        },
+        "interactivity": {
+            "events": {
+                "onhover": {
+                    "enable": false, // Nonaktifkan efek saat mouse hover
+                    "mode": "repulse"
+                }
+            },
+        },
+        "line_linked": {
+            "enable": false // Nonaktifkan jaring-jaring
+        },
+    });
+</script>
+
+</html>
